@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{SHUBHAM KUMAR}{
+\href{mailto:Nimcetshubhamkumar@gmail.com}{Nimcetshubhamkumar@gmail.com} | +91 980 576 4114
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages and Scripts}
+\textbullet{} C++ (Intermediate) \\
+\textbullet{} Java (Intermediate) \\
+\textbullet{} SQL (Intermediate) \\
+\textbullet{} Python (Beginner) \\
+\textbullet{} JavaScript (Beginner) \\
+\textbullet{} Shell and Bash Scripting (Intermediate) \\
+\hfill
+
+\subsection{Industry Knowledge}
+\textbullet{} Agile Methodology \\
+\textbullet{} Spring and Spring Boot \\
+\textbullet{} JDBC, Hibernate and JPA \\
+\textbullet{} Maven and Tomcat \\
+\textbullet{} Git and GitHub \\
+\textbullet{} Docker \\
+\textbullet{} JSON, XML And YAML\\
+\textbullet{} Secure Shell Protocol (SSH) \\
+\textbullet{} PowerBI \\
+\hfill
+
+\subsection{Tools}
+\textbullet{} Eclipse IDE \\
+\textbullet{} Intellij IDE \\
+\textbullet{} Visual Studio Professional \\
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{COURSEWORK}
+\subsection{Postgraduate}
+Object Oriented Programming \\
+Data Structures And Algorithms \\
+Database Systems \\
+Operating Systems \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{NIT, KARNATAKA}
+\descript{Master In Computer Application}
+\location{Completed June 2021 | Karnataka \\ Cum. GPA: 7.85/10}
+
+\hfill
+\subsection{P.G College Nahan}
+\descript{Bachelor In Computer Application}
+\location{Completed June 2018 \\ Cum. GPA: 7.5/10}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Leetcode://  \href{https://leetcode.com/ShubhamKumar1996/}{\custombold{@ShubhamKumar1996}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/shubham-kumar-26a789191}{\custombold{ShubhamKumar}} \\
+Github:// \href{https://github.com/ShubhamKumar1996}{\custombold{ShubhamKumar1996}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Collaborated And Implemented Org Security} \\
+\location{ Jan 2022 – Feb 2022 | Bangalore, IN }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Implemented and Tested Organization level security is being honored when corresponding preference is ON.
+\item \textbf{Tools and Technologies Utilized}: - Java, Maven, XML, Debugging, GitHub
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Mass Build Tool} \\
+\location{May 2021 – August 2021 | Bangalore, IN}
+\begin{tightemize}
+\item Internal tool used to increase the efficiency \& productivity of Engineers.
+\item Utilized to analyze changes in one module is causing any build failures for other modules or not.
+\item Used \textbf{Docker} Container to spin up Jenkins instance on Remote environment.
+\item Used \textbf{SSH} Connection to connect with Remote Environment and execute \textbf{Shell & Batch Script}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Crash Spike Dashboard and Alert Monitoring System}
+\location{Feburary 2021 – April 2021}
+\begin{tightemize}
+\item Detected Crash Spikes from 2019 onwards & collected all required information about them
+\item Fetched other information like Client details, fix details, fix adoption details by joining 7 different tables.
+\item Handled Huge amount of Data using Query Optimization techniques such as Subquery, Temporary Tables etc
+\item Build Power BI Dashboard \& Report to cover all possible scenarios
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Online Shopping Web Application} \\
+\location{January 2020 – April 2020 | NIT Karnataka, IN}
+\begin{tightemize}
+\item Build an E-commerce Web Application using Node.js which allows an authenticated user to buy products. 
+\item Enabled the users to create and sign in to secure Sessions.
+\item Implemented User Authentication by restricting unauthorized user to gain access to restricted routes.
+\item Implemented Authorization by allowing only authorized user to update & delete product.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Co-curriculars and Accomplishments}
+
+\runsubsection{Online Shopping Web Application} \\
+
+\begin{tightemize}
+\item Best Performer Award in Nakshtra'20, NIT Calicut (2020).
+\item 1st in Code Chamber - Coding event at Version, NIT Trichy (2019).
+\item 30th rank in BITMCA Entrance Test - MCA (2018).
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}
+
+\documentclass[]{article}
+
